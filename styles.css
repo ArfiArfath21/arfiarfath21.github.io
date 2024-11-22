@@ -70,13 +70,6 @@ header p {
     margin-bottom: 20px;
 }
 
-/* Social Links */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
 /* Project Cards Section */
 .card-grid {
     display: flex;
@@ -238,4 +231,18 @@ header p {
     border-top: 1px solid #333333;
     font-size: 0.8em;
     color: #a0a0a0;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    /* margin-right: 10px; */
+    /* display: inline-block; */
+    vertical-align: middle;
 }

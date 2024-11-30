@@ -4,208 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arfath Ahmed Syed</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <header style="display: block;">
-        <div class="container">
-
-            <div class="profile-pic">
-                <img src="assets/Arfi_Photo.png" alt="Arfath Ahmed Syed">
+    <div class="d-flex flex-column min-vh-100">
+        <nav class="navbar navbar-expand-lg bg-light px-4">
+            <a class="navbar-brand fw-bold text-uppercase" href="/index.html">Arfath Ahmed Syed</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item about-link">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item contact-link">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <h1>Arfath Ahmed Syed</h1>
-            <p>Data Scientist @ Publicis Sapient | IIT Bombay</p>
-        </div>
-    </header>
-    <main>
-        <section class="section about" style="display: block;">
-            <h2>About Me</h2>
-            <p>
-                Hi! I'm Arfath Ahmed Syed, a Data Scientist at Publicis Sapient. I specialize in 
-                machine learning, NLP, and Generative AI solutions to tackle complex challenges. I graduated from 
-                IIT Bombay and have a deep passion for sustainability, innovation, and creating impact through AI.
-            </p>
+        </nav>
+        <section class="welcome my-5">
+            <div class="container">
+                <h1 id="staytuned-h1" class="caveat-strong">Stay Tuned . . .</h1>
+                <p id="upgrades-text" class="caveat-regular">Exciting upgrades in progress</p>
+            </div>
+
         </section>
-        <section class="section experience">
-            <h2>Experience</h2>
-            <div class="card-grid">
-                <div class="experience-card grid-card">
-                    <div class="experience-header">
-                        <img src="assets/logos/PS_Logo_RGB.png" alt="Publicis Sapient">
-                        <div>
-                            <h3 class="experience-title">Publicis Sapient</h3>
-                            <p>Senior Associate Data Scientist (2022 – Present)</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Developed <strong>Data Converse</strong>, an AI-powered NL2SQL and dynamic visualization tool.</li>
-                        <li>Implemented AI-driven solutions for Unilever’s AIBA and EATS projects.</li>
-                        <li>Launched <strong>Slingshot</strong>, a Generative AI copilot tool improving operational efficiency.</li>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Arfath.me</h3>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Me</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://www.linkedin.com/in/arfiarfath21/" target="_blank">
+                                <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ArfiArfath21" target="_blank">
+                                <img src="assets/icons/github.svg" alt="GitHub">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/ArfathAhmedSyed" target="_blank">
+                                <img src="assets/icons/twitter.svg" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@arfath.me" target="_blank">
+                                <img src="assets/icons/email.svg" alt="Email">
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="experience-card grid-card">
-                    <div class="experience-header">
-                        <img src="assets/logos/saras.jpeg" alt="Saras Analytics">
-                        <div>
-                            <h3 class="experience-title">Saras Analytics</h3>
-                            <p>Business Analyst Intern (2020 – 2021)</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Built churn prediction models using regression and deep neural networks.</li>
-                        <li>Forecasted revenue with ARIMA and SARIMAX models.</li>
-                    </ul>
+                <div class="footer-column">
+                    <h3>Stay Updated</h3>
+                    <form id="subscribeForm">
+                        <input type="email" id="emailInput" placeholder="Your email address" required disabled/>
+                        <button type="submit" disabled>Subscribe</button>
+                    </form>
                 </div>
             </div>
-        </section>
-        <section class="section education">
-            <h2>Education</h2>
-            <div class="card-grid">
-                <div class="education-item grid-card">
-                    <div class="experience-header">
-                        <img src="assets/logos/IITB.png" alt="IIT Bombay">
-                        <div>
-                            <h3 class="experience-title">Indian Institute of Technology Bombay</h3>
-                            <p>B.Tech in Chemical Engineering, 2022</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Arfath Ahmed Syed</p>
             </div>
-        </section>
-        <section id="grid-cards" class="section achievements" style="display: block;">
-            <h2>Achievements</h2>
-            <div class="card-grid">
-                <div class="grid-card achievement-card">
-                    <div class="card-header">
-                        <img src="assets/achievements/ETF.PNG" alt="Embracing The Future">
-                    </div>
-                    <div class="card-body">
-                        <h4>Embracing the Future</h4>
-                        <p>October 2024</p>
-                    </div>
-                </div>
-                <div class="grid-card achievement-card">
-                    <div class="card-header">
-                        <img src="assets/achievements/CS.JPG" alt="Best Gen AI Case Study">
-                    </div>
-                    <div class="card-body">
-                        <h4>Best Gen AI Case Study</h4>
-                        <p>June 2024</p>
-                        <!-- <div class="card-links">
-                            <a href="#">Take a Look</a>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="grid-card achievement-card">
-                    <div class="card-header">
-                        <img src="assets/achievements/pmle.jpg" alt="Professional Machine Learning Engineer">
-                    </div>
-                    <div class="card-body">
-                        <h4>Google Cloud Certified Professional Machine Learning Engineer</h4>
-                        <p>April 2024</p>
-                    </div>
-                </div>
-                <div class="grid-card achievement-card">
-                    <div class="card-header">
-                        <img src="assets/achievements/dspc.jpg" alt="IBM Data Science Professional Certificate">
-                    </div>
-                    <div class="card-body">
-                        <h4>IBM Data Science Professional Certificate</h4>
-                        <p>April 2024</p>
-                    </div>
-                </div>
-                <div class="grid-card achievement-card">
-                    <div class="card-header">
-                        <img src="assets/achievements/db-genai.png" alt="Databricks Gen AI Fundamentals">
-                    </div>
-                    <div class="card-body">
-                        <h4>Databricks Generative AI Fundamentals</h4>
-                        <p>April 2024</p>
-                    </div>
-                </div>
-                <div class="grid-card achievement-card">
-                    <div class="card-header">
-                        <img src="assets/achievements/etf-ul.png" alt="Embracing The Future - Unilever">
-                    </div>
-                    <div class="card-body">
-                        <h4>Embracing The Future</h4>
-                        <p>November 2023</p>
-                    </div>
-                </div>
-                <div class="grid-card achievement-card">
-                    <div class="card-header">
-                        <img src="assets/achievements/inccollab.jpg" alt="Inclusive Collaborator">
-                    </div>
-                    <div class="card-body">
-                        <h4>Inclusive Collaborator</h4>
-                        <p>August 2023</p>
-                    </div>
-                </div>
-                <div class="grid-card achievement-card">
-                    <div class="card-header">
-                        <img src="assets/achievements/debut.png" alt="Best Debutant">
-                    </div>
-                    <div class="card-body">
-                        <h4>Best Debutant</h4>
-                        <p>May 2023</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-</div>
-<footer class="footer">
-    <div class="footer-container">
-        <!-- About Section -->
-        <div class="footer-column">
-            <h3>Arfath.me</h3>
-            <!-- <p>
-                Senior Associate Data Scientist specializing in Generative AI, NLP, and Machine Learning.
-                Passionate about leveraging AI to solve real-world challenges.
-            </p> -->
-        </div>
-        
-        <!-- Social Media Links -->
-        <div class="footer-column">
-            <h3>Follow Me</h3>
-            <ul class="social-links">
-                <li>
-                    <a href="https://www.linkedin.com/in/arfiarfath21/" target="_blank">
-                        <img src="assets/icons/linkedin.svg" alt="LinkedIn">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/ArfiArfath21" target="_blank">
-                        <img src="assets/icons/github.svg" alt="GitHub">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://x.com/ArfathAhmedSyed" target="_blank">
-                        <img src="assets/icons/twitter.svg" alt="Twitter">
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:contact@arfath.me" target="_blank">
-                        <img src="assets/icons/email.svg" alt="Email">
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Newsletter Signup -->
-        <div class="footer-column">
-            <h3>Stay Updated</h3>
-            <form>
-                <input type="email" placeholder="Your email address" required />
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    
-        <!-- Footer Bottom -->
-        <!-- <div class="footer-bottom">
-            <p>&copy; 2024 Arfath Ahmed Syed</p>
-        </div> -->
-    </footer>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
+
 </html>

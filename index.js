@@ -12,7 +12,12 @@ const db = new pg.Client({
     password: '',
     port: 5432,
 });
-db.connect();
+
+try {
+    await db.connect();
+} catch (error) {
+    console.log(`Couldn't connect to DB: ${error}`);
+}
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));

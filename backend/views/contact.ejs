@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+    <section class="section contact my-5">
+        <div class="container contact">
+            <h1 class="">Contact Me</h1>
+            <div class="contact-form-div col-md-6 mx-auto my-5">
+                <form action="/contact" class="" method="POST">
+                    <div class="mb-3">
+                        <label for="contact-form-name" class="form-label">Name</label>
+                        <input type="text" name="name" id="contact-form-name" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact-form-email" class="form-label">Email Address</label>
+                        <input type="email" name="email" id="contact-form-email" class="form-control"
+                            placeholder="Email Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact-form-number" class="form-label">Phone Number</label>
+                        <input type="number" name="number" id="contact-form-number" class="form-control"
+                            placeholder="Phone Number" min="1000000">
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" id="contact-form-submit"
+                            class="btn btn-primary col-md-12">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<%- include("partials/footer.ejs") %>

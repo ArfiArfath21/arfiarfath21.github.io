@@ -9,7 +9,7 @@ export default function Work() {
             <Column >
                 <div className='relative px-4 sm:px-8 lg:px-12'>
                     <div className='mx-auto mx-w-2xl lg:max-w-5xl'>
-                        <h1 className="text-4xl text-center">ARFATH AHMED SYED</h1>
+                        <h1 className="text-4xl text-center">OUR WORK</h1>
                     </div>
                 </div>
             </Column>
